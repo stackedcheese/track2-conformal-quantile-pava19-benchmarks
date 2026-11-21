@@ -1,0 +1,122 @@
+{
+  "claim_boundary": "Empirical shift coverage is descriptive and exchangeability-based coverage does not transfer automatically.",
+  "crps_integration": "19 piecewise linear quantiles with constant tails. CQR corrects intervals separately.",
+  "eprocess": {
+    "alpha": 0.1,
+    "first_null_ville_crossing_rate": 0.07333333333333333,
+    "fixed_families": 20,
+    "mean_fdp": 0.03833333333333333,
+    "mean_true_discovery_fraction": 0.25599999999999995,
+    "median_true_alert_latency_steps": 24.0,
+    "scope": "Bernoulli simulation with preregistered factors and common bounded stopping",
+    "seed": 2715240,
+    "simulated_runs": 300
+  },
+  "historical_reference": {
+    "crossings_after": 0,
+    "crossings_before": 184,
+    "past_only_rows": 36040,
+    "source": "Note 214 methods manifest"
+  },
+  "models": {
+    "CatBoost": {
+      "cqr_radius": 0.46144376042563007,
+      "interval_correction_only": true,
+      "pava": {
+        "coverage": 0.5988888888888889,
+        "crossing_rows": 0,
+        "crps": 0.7581247457275678,
+        "mean_pinball": 0.3947109395441051,
+        "width": 2.391121177461641
+      },
+      "pava_cqr": {
+        "coverage": 0.7833333333333333,
+        "crossing_rows": 0,
+        "crps": 0.7581247457275678,
+        "mean_pinball": 0.3947109395441051,
+        "width": 3.3140086983129016
+      },
+      "raw": {
+        "coverage": 0.5988888888888889,
+        "crossing_rows": 888,
+        "integrated_pinball_nonmonotone": 0.7600521407280885,
+        "mean_pinball": 0.3959961653204399,
+        "width": 2.3778705367914643
+      }
+    },
+    "LightGBM": {
+      "cqr_radius": 0.5199166304949536,
+      "interval_correction_only": true,
+      "pava": {
+        "coverage": 0.57,
+        "crossing_rows": 0,
+        "crps": 0.7728257239944984,
+        "mean_pinball": 0.4018139498815875,
+        "width": 2.2483112515829173
+      },
+      "pava_cqr": {
+        "coverage": 0.7833333333333333,
+        "crossing_rows": 0,
+        "crps": 0.7728257239944984,
+        "mean_pinball": 0.4018139498815875,
+        "width": 3.288144512572825
+      },
+      "raw": {
+        "coverage": 0.5633333333333334,
+        "crossing_rows": 898,
+        "integrated_pinball_nonmonotone": 0.7762128726012303,
+        "mean_pinball": 0.4041865090877474,
+        "width": 2.229420126571914
+      }
+    },
+    "XGBoost": {
+      "cqr_radius": 0.5724794507716258,
+      "interval_correction_only": true,
+      "pava": {
+        "coverage": 0.5688888888888889,
+        "crossing_rows": 0,
+        "crps": 0.7801260449822418,
+        "mean_pinball": 0.4053262752956684,
+        "width": 2.236727714538574
+      },
+      "pava_cqr": {
+        "coverage": 0.7855555555555556,
+        "crossing_rows": 0,
+        "crps": 0.7801260449822418,
+        "mean_pinball": 0.4053262752956684,
+        "width": 3.3816866874694824
+      },
+      "raw": {
+        "coverage": 0.5633333333333334,
+        "crossing_rows": 896,
+        "integrated_pinball_nonmonotone": 0.7848975470179549,
+        "mean_pinball": 0.40846894665541,
+        "width": 2.2203712463378906
+      }
+    }
+  },
+  "network_calls": 0,
+  "rows": {
+    "calibration": 700,
+    "shift_test": 900,
+    "train": 2000
+  },
+  "schema": "SDL_V27_BENCHMARK_TRACK2_V1",
+  "scope": "Synthetic chronological train/calibration/shift splits. Protected cohorts excluded.",
+  "seed": 2715215,
+  "simplex": {
+    "input": [
+      0.8,
+      0.2381
+    ],
+    "power": [
+      0.7865309047597472,
+      0.21346909524025295
+    ],
+    "shin": [
+      0.7809499999999999,
+      0.2190500000000001
+    ]
+  },
+  "status": "PASS_SYNTHETIC_SHIFT_EXECUTION"
+}

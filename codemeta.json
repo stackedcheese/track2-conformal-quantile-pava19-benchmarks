@@ -1,0 +1,18 @@
+{
+  "@context": "https://w3id.org/codemeta/3.0",
+  "@type": "SoftwareSourceCode",
+  "name": "Non-crossing Quantile Calibration and Sequential Review",
+  "description": "Synthetic distribution-shift experiment with chronological folds and three CPU learners.",
+  "version": "1.0.0",
+  "author": [
+    {
+      "@type": "Organization",
+      "name": "SuperLab LLC",
+      "@id": "https://orcid.org/0009-0007-7479-7082"
+    }
+  ],
+  "license": "https://spdx.org/licenses/MIT.html",
+  "programmingLanguage": "Python",
+  "url": "https://stackedcheese.com/research",
+  "dateCreated": "2026-11-20"
+}

@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "Cite the software and keep each benchmark scope with its results."
+title: "Non-crossing Quantile Calibration and Sequential Review"
+type: software
+version: 1.0.0
+date-released: 2026-11-20
+license: MIT
+authors:
+  - given-names: Levord
+    family-names: Rose
+    name-suffix: Jr.
+    orcid: "https://orcid.org/0009-0007-7479-7082"
+  - name: SuperLab LLC
+url: https://stackedcheese.com/research
